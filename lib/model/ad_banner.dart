@@ -5,7 +5,7 @@ List<AdBanner> adBannerListFromJson(String val) => List<AdBanner>.from(
 
 class AdBanner {
   final int id;
-  final int image;
+  final String image;
 
   AdBanner({
     required this.id,

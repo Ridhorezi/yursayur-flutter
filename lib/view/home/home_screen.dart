@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:yursayur/component/main_header.dart';
 import 'package:yursayur/controller/controllers.dart';
 import 'package:yursayur/view/home/components/carousel_slider/carousel_loading.dart';
+import 'package:yursayur/view/home/components/carousel_slider/carousel_slider_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,8 +15,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           const MainHeader(),
           Obx(() {
-            if (homeController.isBannerLoading.value) {
-              return CarouselLoading();
+            if (homeController.bannerList.isNotEmpty) {
+              return CarouselSliderView(bannerList: homeController.bannerList);
             } else {
               return CarouselLoading();
             }

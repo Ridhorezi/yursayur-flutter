@@ -5,7 +5,7 @@ import 'package:yursayur/service/remote_service/remote_banner_service.dart';
 class HomeController extends GetxController {
   static HomeController intance = Get.find();
   RxList<AdBanner> bannerList = List<AdBanner>.empty(growable: true).obs;
-  Rx isBannerLoading = false.obs;
+  RxBool isBannerLoading = false.obs;
 
   @override
   void onInit() {
