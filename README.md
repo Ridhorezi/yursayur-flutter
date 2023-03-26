@@ -1,6 +1,6 @@
 # yursayur
 
-A new Flutter project.
+Aplikasi e-commerce sayuran menggunakan hive local storage dan strapi.
 
 ## Getting Started
 
